@@ -28,7 +28,7 @@ public abstract class MvpActivity<P extends Presenter> extends AppCompatActivity
         return mvpDelegate;
     }
 
-    protected Presenter getPresenter(){
+    protected P getPresenter(){
         return getMvpDelegate().getPresenter();
     }
 

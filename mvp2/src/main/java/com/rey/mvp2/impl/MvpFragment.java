@@ -28,7 +28,7 @@ public abstract class MvpFragment<P extends Presenter> extends Fragment {
         return mvpDelegate;
     }
 
-    protected Presenter getPresenter() {
+    protected P getPresenter() {
         return getMvpDelegate().getPresenter();
     }
 

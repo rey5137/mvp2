@@ -28,7 +28,7 @@ public abstract class MvpDialogFragment<P extends Presenter> extends AppCompatDi
         return mvpDelegate;
     }
 
-    protected Presenter getPresenter() {
+    protected P getPresenter() {
         return getMvpDelegate().getPresenter();
     }
 
